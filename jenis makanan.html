@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Bagas</title>
+    <link rel="icon" href="Hijau Zaitun Klasik Warung Sembako Logo.png" class="icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+        body {
+            background-color: cadetblue;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Desktop-Wallpaper-Aesthetic-Wallpaper-Anime.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            color: white;
+        }
+
+        .header {
+            background-color: aliceblue;
+            color: gold;
+            padding: 10px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header-barang {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .header-barang a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .header-barang a:hover {
+      background-color: gold;
+      color: white;
+    }
+
+        .logo {
+            position: relative;
+            right: -1150px;
+            top: -93px;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            box-shadow: black 2px 5px;
+        }
+
+        .produk-1, .produk-2, .produk-3 {
+            background-color: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            padding: 30px;
+            width: 300px;
+            position: relative;
+            height: 400px;
+            margin: 30px;
+            border-radius: 10px;
+            color: black;
+        }
+
+        .produk-1 {
+            top: -70px;
+            left: -20px;
+        }
+
+        .produk-2 {
+            top: -560px;
+            right: -430px;
+        }
+
+        .produk-3 {
+            top: -1050px;
+            right: -880px;
+        }
+
+        .laptop, .rtx, .keyboard {
+            width: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px;
+        }
+
+        .laptop {
+            border: solid gold;
+            box-shadow: 0px 0px 10px gold;
+        }
+
+        .rtx {
+            border: solid green;
+            box-shadow: 0px 0px 10px green;
+        }
+
+        .keyboard {
+            border: aqua;
+            box-shadow: 0px 0px 10px aqua;
+        }
+
+        .produk-1:hover, .produk-2:hover, .produk-3:hover {
+            background-color: #ddd;
+        }
+
+        p, button {
+            margin: 0 auto;
+            gap: 20px;
+            display: grid;
+        }
+
+        button {
+            position: relative;
+            display: flex;
+            gap: 10px;
+            border-radius: 5px;
+            color: black;
+            cursor: pointer;
+            border: none;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            color: white;
+            background-color: gold;
+        }
+
+        .bagas, .ikan, .board {
+            position: relative;
+            top: 5px;
+            border-radius: 5px;
+            transition: backgroun-color 0.3s;
+        }
+
+        .bagas:hover, .ikan:hover, .board:hover {
+            color: white;
+            background-color: gold;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .icon {
+            border-radius: 50%;
+        }
+
+        .container{
+            position: relative;
+            top: -15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" name="konten">
+        <h1>WARUNG BAGAS</h1>
+        <div class="header-barang">
+            <a href="jenis barang.html" target="konten">Barang Elektronik</a>
+            <a href="jenis makanan.html" target="konten">Makanan</a>
+            <a href="pembayaran.html" target="konten">Metode Pembayaran</a>
+            <a href="tentang.html" target="konten">Tentang Kami</a>
+            <a href="media sosial.html">Media Sosial</a>
+        </div>
+    </div>
+
+    <a href="halaman utama.html">
+        <img src="Hijau Zaitun Klasik Warung Sembako Logo.png" alt="logo" width="100" height="100" class="logo">
+    </a>
+    <div class="container">
+    <div class="produk-1">
+        <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2024/07/16063726/Rendang-1.jpg" alt="Laptop Gaming Lenovo Legion" width="350" height="350" class="laptop">
+        <p align="center">Rendang Palembang</p>
+        <a href="pembayaran.html"><button>Rp.15.000</button></a>
+        <a href="makanan.html"><button class="bagas">Cek Detail</button></a>
+    </div>
+
+    <div class="produk-2">
+        <img src="https://asset.kompas.com/crops/3xYktcut3GtTLSvS9iNgqM4e380=/0x0:1000x667/1200x800/data/photo/2023/05/06/645677f368fc1.jpg" alt="" width="350" height="350" class="rtx">
+        <p align="center">Nasi Goreng Jomokerto</p>
+        <a href="pembayaran.html"><button class="sagab">Rp15.000</button></a>
+        <a href="nasi goreng.html"><button class="ikan">Cek Detail</button></a>
+    </div>
+
+    <div class="produk-3">
+        <img src="https://i0.wp.com/resepkoki.id/wp-content/uploads/2020/10/Resep-Bakso-Mercon.jpg?fit=1079%2C1207&ssl=1" alt="" width="350" height="350" class="keyboard">
+        <p align="center">Bakso Mercon</p>
+        <a href="pembayaran.html"><button class="asgab">Rp20.000</button></a>
+        <a href="bakso mercon.html"><button class="board">Cek Detail</button></a>
+    </div>
+    </div>
+</body>
+</html>

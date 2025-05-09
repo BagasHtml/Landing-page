@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warung Bagas</title>
+  <link rel="icon" href="Hijau Zaitun Klasik Warung Sembako Logo.png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    body {
+        background-color: cadetblue;
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        height: 100vh;
+        overflow: hidden;        
+    }
+
+    .header {
+        background-color: aliceblue;
+        color: gold;
+        padding: 10px 20px;
+    }
+
+    .header h1 {
+        margin: 0;
+    }
+
+    .header-barang {
+        display: flex;
+        gap: 10px;
+        margin-top: 5px;
+    }
+
+    .header-barang a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .header-barang a:hover {
+      background-color: gold;
+      color: white;
+    }
+
+    .logo {
+        display: flex;
+        width: 90px;
+        border-radius: 60%;
+        position: relative;
+        right: -1150px;
+        top: -95px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        position: relative;
+        top: -90px;
+    }
+
+    .product-image {
+        border-radius: 20px;
+        border: 2px solid green;
+        box-shadow: 0px 0px 10px green;
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .produk {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .produk h1 {
+        margin-top: 0;
+    }
+
+    .produk p {
+        line-height: 1.5;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    .harga {
+        background-color: black;
+      color: white;
+      padding: 10px 20px;
+      width: fit-content;
+      border-radius: 30px;
+      margin-top: 20px;
+      position: relative;
+      right: -30%;
+    }
+    
+    .harga a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -2px;
+}
+
+    .harga a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+      background-color: gold; 
+      transition: 0.3s ease;
+}
+
+.harga a:hover::after {
+    width: 100%;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="header" name="konten">
+    <h1>WARUNG BAGAS</h1>
+    <div class="header-barang">
+      <a href="jenis barang.html" target="konten">Barang Elektronik</a>
+      <a href="jenis makanan.html" target="konten">Makanan</a>
+      <a href="pembayaran.html" target="konten">Metode Pembayaran</a>
+      <a href="tentang.html" target="konten">Tentang Kami</a>
+      <a href="media sosial.html">Media Sosial</a>
+    </div>
+  </div>
+
+  <a href="halaman utama.html">
+    <img src="Hijau Zaitun Klasik Warung Sembako Logo.png" alt="logo" class="logo" />
+  </a>
+
+  <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSisFLIT1MgApN4mkxxFQATRBvkhUSZRe-jcw&s" alt="Fantech Atom 63 Keyboard" class="product-image" />
+
+    <div class="produk">
+      <h1>Fantech Atom 63 Keyboard</h1>
+      <p>
+        Fantech Atom 63 adalah keyboard mekanik compact yang dirancang untuk keperluan gaming dan produktivitas tinggi. Dikenal dengan build quality yang solid dan switch yang responsif, keyboard ini memberikan pengalaman mengetik dan bermain yang optimal.
+      </p>
+      <ul>
+        <li>Compact Design: Ukuran 60% yang kompak cocok untuk gamer dan pengguna yang membutuhkan keyboard portabel.</li>
+        <li>RGB Backlighting: Dilengkapi dengan pencahayaan RGB yang dapat disesuaikan untuk meningkatkan tampilan dan pengalaman bermain game.</li>
+        <li>Switch Mekanik: Menggunakan switch mekanik yang responsif untuk kenyamanan dan ketahanan jangka panjang.</li>
+      </ul>
+      <div class="harga">
+        <a href="pembayaran.html">Rp799.000</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

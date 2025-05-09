@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Bagas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="icon" href="Hijau Zaitun Klasik Warung Sembako Logo.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cal+Sans&display=swap');
+
+        body {
+            background-color: cadetblue;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            overflow: hidden;
+            background-image: url(https://static.vecteezy.com/system/resources/thumbnails/023/041/947/small_2x/coloured-feathers-in-pink-on-the-background-in-the-style-of-subtle-shading-anime-aesthetic-wallpaper-pigeoncore-free-brushwork-translucent-color-generat-ai-free-photo.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .header {
+            background-color: aliceblue;
+            color: gold;
+            padding: 10px 20px;
+        }
+
+        .header h1 {
+            margin: 0;
+        }
+
+        .header-barang {
+            display: flex;
+            gap: 10px;
+            margin-top: 5px;
+        }
+
+        .header-barang a {
+            text-decoration: none;
+            color: #333;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+    }
+
+    .header-barang a:hover {
+    background-color: gold;
+    color: white;
+    }
+
+        .logo {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px 20px 0 0;
+        }
+
+        .logo img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 2px 3px black;
+            position: relative;
+            top: -100px;
+        }
+
+        .utama {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 15px;
+            position: relative;
+            top: -30px;
+            left: -300px;
+        }
+
+        .utama img {
+            width: 150px;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+        }
+
+        .keterangan {
+            text-align: center;
+            font-size: 15px;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            margin-bottom: 40px;
+            position: relative;
+            top: -250px;
+            right: -270px;
+        }
+
+        .judul {
+            color: gold;
+            font-size: 19px;
+            position: relative;
+            top: -60px;
+            animation: fadeInUp 2s ease-in-out, colorChange 4s infinite;
+            font-size: 28px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+
+        .line{
+            width: 320px;
+            height: 4px;
+            background-color: gold;
+            margin: 0 auto 30px;
+            border-radius: 10px;
+            position: relative;
+            top: -120px;
+        }
+
+        .bagas {
+            font-size: 15px;
+            position: relative;
+            top: -150px;
+        }
+
+        .gim {
+            position: relative;
+            top: -10px;
+        }
+
+        .igm {
+            position: relative; 
+            top: 10px;
+        }
+
+        .mig {
+            position: relative;
+            top: -10px;
+        }
+
+
+        @keyframes colorChange {
+            0% {
+                color: gold;
+            }
+            25% {
+                color: black;
+            }
+            50% {
+                color: gold;
+            }
+            75% {
+                color: black;
+            }
+            100% {
+                color: gold;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header" name="konten">
+        <h1>WARUNG BAGAS</h1>
+        <div class="header-barang">
+            <a href="jenis barang.html" target="konten">Barang Elektronik</a>
+            <a href="jenis makanan.html" target="konten">Makanan</a>
+            <a href="pembayaran.html" target="konten">Metode Pembayaran</a>
+            <a href="tentang.html" target="konten">Tentang Kami</a>
+            <a href="media sosial.html" target="konten">Media Sosial</a>
+        </div>
+    </div>
+
+    <div class="logo">
+        <a href="halaman utama.html"><img src="Hijau Zaitun Klasik Warung Sembako Logo.png" alt="logo"></a>
+    </div>
+
+    <div class="utama">
+        <img src="https://www.softcom.co.id/wp-content/uploads/2024/03/83DG000AID-4.jpg" alt="" class="gim">
+        <img src="https://d1vbn70lmn1nqe.cloudfront.net/prod/wp-content/uploads/2024/07/16063726/Rendang-1.jpg" alt="" class="igm">
+        <img src="Hijau Zaitun Klasik Warung Sembako Logo.png" alt="" class="mig">
+    </div> 
+
+    <div class="keterangan">
+        <p class="judul" style="font-size: 20px; font-family: 'Poppins', sans-serif; position: relative; top: -100px;">Selamat datang di toko Kami!</p>
+        <div class="line"></div>
+        <p class="bagas" style="font-size: 19px; position: relative; top: -80px; font-weight: bold;">kami menjual barang dan makanan disini. Selamat berbelanja :).</p>
+    </div>
+</body>
+</html>

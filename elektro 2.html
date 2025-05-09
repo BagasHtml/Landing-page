@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warung Bagas</title>
+  <link rel="icon" href="Hijau Zaitun Klasik Warung Sembako Logo.png" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    body {
+        margin: 0;
+        background-color: cadetblue;
+        font-family: 'Poppins', sans-serif;
+        padding: 0;
+        overflow: hidden;
+        height: 100vh;
+    }
+
+    .header {
+        background-color: aliceblue;
+        padding: 10px 20px;
+        color: gold;
+    }
+
+    .header h1 {
+        margin: 0;
+    }
+
+    .header-barang {
+        display: flex;
+        margin-top: 5px;
+        gap: 10px;
+    }
+
+    .header-barang a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .header-barang a:hover {
+      background-color: gold;
+      color: white;
+    }
+
+    .logo {
+        width: 90px;
+        display: flex;
+        position: relative;
+        border-radius: 60%;
+        top: -95px;
+        right: -1150px;
+    }
+
+    .container {
+        max-width: 1000px;
+        margin: 50px auto;
+        padding: 20px;
+        border-radius: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+        position: relative;
+        top: -90px;
+    }
+
+    .product-image {
+        border-radius: 20px;
+        border: 2px solid green;
+        box-shadow: 0px 0px 10px green;
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+    }
+
+    .produk {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .produk h1 {
+        margin-top: 0;
+    }
+
+    .produk p {
+        line-height: 1.5;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    a{
+      background-color: #333;
+    }
+    .harga {
+        background-color: black;
+      color: white;
+      padding: 10px 20px;
+      width: fit-content;
+      border-radius: 30px;
+      margin-top: 20px;
+      position: relative;
+      right: -30%;
+    }
+    
+    .harga a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    top: -2px;
+}
+
+    .harga a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+      background-color: gold; 
+      transition: 0.3s ease;
+}
+
+.harga a:hover::after {
+    width: 100%;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="header" name="konten">
+    <h1>WARUNG BAGAS</h1>
+    <div class="header-barang">
+      <a href="jenis barang.html" target="konten">Barang Elektronik</a>
+      <a href="jenis makanan.html" target="konten">Makanan</a>
+      <a href="pembayaran.html" target="konten">Metode Pembayaran</a>
+      <a href="tentang.html" target="konten">Tentang Kami</a>
+      <a href="media sosial.html">Media Sosial</a>
+    </div>
+  </div>
+
+  <a href="halaman utama.html">
+    <img src="Hijau Zaitun Klasik Warung Sembako Logo.png" alt="logo" class="logo" />
+  </a>
+
+  <div class="container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT430S3ZUBKxu47HV12AZQNu0pCVVMBCp2TQg&s" alt="RTX 5090" class="product-image" />
+
+    <div class="produk">
+      <h1>RTX 5090</h1>
+      <p>
+        NVIDIA GeForce RTX 5090 adalah kartu grafis terbaru dengan performa luar biasa untuk gaming, rendering, dan aplikasi berat lainnya. Dengan teknologi terbaru dan performa yang sangat tinggi, RTX 5090 menghadirkan pengalaman grafis yang luar biasa.
+      </p>
+      <ul>
+        <li>Grafis Terbaik: Ditenagai oleh arsitektur Ampere, RTX 5090 menawarkan performa luar biasa untuk gaming dan pekerjaan kreatif.</li>
+        <li>Ray Tracing: Dapatkan kualitas grafis yang sangat realistis dengan ray tracing untuk efek cahaya dan bayangan yang lebih mendalam.</li>
+      </ul>
+      <div class="harga">
+        <a href="pembayaran.html">Rp34.999.000</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

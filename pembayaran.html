@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Warung Bagas</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="icon" href="Hijau Zaitun Klasik Warung Sembako Logo.png">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+    body {
+      background-color: cadetblue;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      height: 100vh;
+      overflow: hidden;
+      background-image: url(https://wallpapercat.com/w/full/4/b/8/5817826-3840x2160-desktop-hd-aesthetic-wallpaper-photo.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .header {
+      background-color: aliceblue;
+      color: gold;
+      padding: 10px 20px;
+      position: relative;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
+
+    .header-barang {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .header-barang a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .header-barang a:hover {
+      background-color: gold;
+      color: white;
+    }
+
+    .logo {
+      position: relative;
+      right: -1150px;
+      top: -90px;
+      border-radius: 50%;
+      width: 80;
+      height: 80px;
+      box-shadow: black 2px 5px;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.25);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      padding: 40px 30px;
+      width: 400px;
+      border-radius: 15px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      position: relative;
+      right: -370px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      color: #000;
+      font-weight: 600;
+      font-size: 16px;
+      text-align: center;
+      top: -50px;
+    }
+
+    .metode-bayar {
+      font-weight: 700;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: black;
+    }
+
+    label.label {
+      font-weight: 600;
+      text-align: left;
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    select {
+      width: 100%;
+      padding: 8px 12px;
+      border-radius: 8px;
+      border: 1.5px solid #aaa;
+      font-size: 1rem;
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    select:focus {
+      border-color: gold;
+      box-shadow: 0 0 5px gold;
+    }
+
+    .bayar {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+      margin-top: 15px;
+    }
+
+    .bayar > label {
+      font-weight: 600;
+      font-size: 1.1rem;
+      align-self: flex-start;
+    }
+
+    .bayar-options {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      padding-left: 15px;
+      width: 100%;
+      color: #222;
+    }
+
+    .bayar-options label {
+      cursor: pointer;
+      user-select: none;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .bayar-options input[type="radio"] {
+      margin-right: 10px;
+      cursor: pointer;
+      width: auto;
+    }
+
+    .beli {
+      border-radius: 30px;
+      width: 100%;
+      padding: 12px 0;
+      background-color: gold;
+      border: none;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-top: 15px;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      color: #222;
+    }
+
+    .beli:hover {
+      background-color: #d4af37;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+    }
+
+    @media (max-width: 460px) {
+      .container {
+        width: 90vw;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header" name="konten">
+    <h1>WARUNG BAGAS</h1>
+    <div class="header-barang">
+      <a href="jenis barang.html" target="konten">Barang Elektronik</a>
+      <a href="jenis makanan.html" target="konten">Makanan</a>
+      <a href="pembayaran.html" target="konten">Metode Pembayaran</a>
+      <a href="tentang.html" target="konten">Tentang Kami</a>
+      <a href="media sosial.html">Media Sosial</a>
+    </div>
+  </div>
+
+  <a href="halaman utama.html">
+    <img src="Hijau Zaitun Klasik Warung Sembako Logo.png" alt="logo" class="logo" />
+  </a>
+
+  <div class="container">
+    <label class="metode-bayar">METODE PEMBAYARAN WARUNG BAGAS</label>
+
+    <label class="label" for="barang">Barang yang ingin di Beli</label>
+    <select id="barang" name="barang">
+      <option value="">Laptop Lenovo Legion</option>
+      <option value="">Rendang Palembang</option>
+      <option value="">RTX 5090</option>
+      <option value="">Keyboard Fantech 63 Atom</option>
+      <option value="">Nasi Goreng Jomokerto</option>
+    </select>
+
+    <div class="bayar">
+      <label>Metode Pembayaran</label>
+      <div class="bayar-options">
+        <label><input type="radio" name="metode" id="metode1" /> Kartu Rekening</label>
+        <label><input type="radio" name="metode" id="metode2" /> Transfer Bank</label>
+        <label><input type="radio" name="metode" id="metode3" /> Bayar di tempat</label>
+      </div>
+      <button class="beli" onclick="showAlert()">Bayar</button>
+    </div>
+  </div>
+
+  <script>
+    function showAlert() {
+      Swal.fire({
+        title: "ARIGATOUU!",
+        text: "Pesanan anda akan di proses!",
+        icon: "success",
+      });
+    }
+  </script>
+</body>
+</html>
+
+```
+

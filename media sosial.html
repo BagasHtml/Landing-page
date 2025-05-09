@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Warung Bagas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="Hijau Zaitun Klasik Warung Sembako Logo.png" />
+  <style>
+    body {
+      background-color: #2a3439;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .header {
+      background-color: aliceblue;
+      color: gold;
+      padding: 10px 30px;
+    }
+
+    .header h1 {
+      margin: 0;
+    }
+
+    .header-barang {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+      flex-wrap: wrap;
+    }
+
+    .header-barang a {
+      text-decoration: none;
+      color: #333;
+      padding: 5px 10px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .header-barang a:hover {
+      background-color: gold;
+      color: white;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: flex-end;
+      padding: 10px 20px;
+    }
+
+    .logo img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      box-shadow: 2px 3px black;
+    }
+
+    .judul {
+      color: gold;
+      font-size: 28px;
+      animation: fadeInUp 2s ease-in-out, colorChange 4s infinite;
+      margin: 40px 0 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    @keyframes colorChange {
+      0%, 100% { color: gold; }
+      25%, 75% { color: black; }
+      50% { color: gold; }
+    }
+
+    .line {
+      width: 320px;
+      height: 4px;
+      background-color: gold;
+      margin: 10px auto 30px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px gold;
+    }
+
+    .bagas {
+      font-size: 19px;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+    }
+
+    .mediasosial {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 30px 0;
+    }
+
+    .mediasosial img {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      transition: transform 0.3s;
+    }
+
+    .mediasosial img:hover {
+      transform: scale(1.1);
+    }
+
+    .udul {
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      margin-top: 30px;
+    }
+
+    .keterangan {
+      text-align: center;
+      color: white;
+      margin: 40px auto;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>WARUNG BAGAS</h1>
+    <div class="header-barang">
+      <a href="jenis barang.html" target="konten">Barang Elektronik</a>
+      <a href="jenis makanan.html" target="konten">Makanan</a>
+      <a href="pembayaran.html" target="konten">Metode Pembayaran</a>
+      <a href="tentang.html" target="konten">Tentang Kami</a>
+      <a href="media sosial.html">Media Sosial</a>
+    </div>
+  </div>
+
+  <div class="logo">
+    <a href="halaman utama.html">
+      <img src="Hijau Zaitun Klasik Warung Sembako Logo.png" alt="logo" />
+    </a>
+  </div>
+
+  <div class="udul">
+    <h2>MAMPIR JUGA DI MEDIA SOSIAL KAMI :)</h2>
+  </div>
+    <div class="line"></div>
+  <div class="mediasosial">
+    <a href="https://www.instagram.com/bagas_tresnaa_/" target="_blank" title="Instagram">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" />
+    </a>
+    <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+    </a>
+    <a href="https://www.tiktok.com/" target="_blank" title="TikTok">
+      <img src="https://cdn.pixabay.com/photo/2022/02/09/08/35/tiktok-7002882_1280.png" alt="TikTok" />
+    </a>
+  </div>
+
+</body>
+</html>
