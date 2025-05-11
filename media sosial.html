@@ -18,6 +18,7 @@
       background-color: aliceblue;
       color: gold;
       padding: 10px 30px;
+      position: relative;
     }
 
     .header h1 {
@@ -33,10 +34,10 @@
 
     .header-barang a {
       text-decoration: none;
-      color: #333;
+      color: black;
       padding: 5px 10px;
       border-radius: 5px;
-      transition: background-color 0.3s;
+      transition: background-color 0.3s, color 0.3s
     }
 
     .header-barang a:hover {
@@ -45,11 +46,10 @@
     }
 
     .logo {
-      display: flex;
-      justify-content: flex-end;
-      padding: 10px 20px;
-      position: relative;
-      top: -100px;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      z-index: 1;
     }
 
     .logo img {
@@ -120,7 +120,6 @@
       color: white;
       margin: 40px auto;
     }
-
   </style>
 </head>
 <body>
@@ -128,24 +127,24 @@
   <div class="header">
     <h1>WARUNG BAGAS</h1>
     <div class="header-barang">
-      <a href="jenis barang.html" target="konten">Barang Elektronik</a>
-      <a href="jenis makanan.html" target="konten">Makanan</a>
-      <a href="pembayaran.html" target="konten">Metode Pembayaran</a>
-      <a href="tentang.html" target="konten">Tentang Kami</a>
+      <a href="jenis barang.html">Barang Elektronik</a>
+      <a href="jenis makanan.html">Makanan</a>
+      <a href="pembayaran.html">Metode Pembayaran</a>
+      <a href="tentang.html">Tentang Kami</a>
       <a href="media sosial.html">Media Sosial</a>
     </div>
-  </div>
-
-  <div class="logo">
-    <a href="halaman utama.html">
-      <img src="Hijau Zaitun Klasik Warung Sembako Logo.png" alt="logo" />
-    </a>
+    <div class="logo">
+      <a href="halaman utama.html">
+        <img src="Hijau Zaitun Klasik Warung Sembako Logo.png" alt="logo" />
+      </a>
+    </div>
   </div>
 
   <div class="udul">
     <h2>MAMPIR JUGA KE MEDIA SOSIAL KAMI :)</h2>
   </div>
-    <div class="line"></div>
+  <div class="line"></div>
+
   <div class="mediasosial">
     <a href="https://www.instagram.com/bagas_tresnaa_/" target="_blank" title="Instagram">
       <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" alt="Instagram" />
